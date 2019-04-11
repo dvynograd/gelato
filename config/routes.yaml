@@ -1,0 +1,9 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+gelato_order_place:
+  path: /order/place/{cartId}
+  controller: \App\Gelato\Order\Controller\PlaceController::index
+  requirements:
+    cartId: '\d+'
